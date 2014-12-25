@@ -1,0 +1,2 @@
+-e git+git@github.com:bbiskup/purkinje-messages.git@dev#egg=purkinje_messages
+-e git+git@github.com:bbiskup/purkinje-pytest.git@dev#egg=purkinje_pytest
