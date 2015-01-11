@@ -2,7 +2,7 @@ import pytest
 import random
 import time
 
-rand_sep = random.randint(0, 10)
+rand_sep = 8
 
 
 def test_1():
@@ -37,5 +37,5 @@ def test_3():
 @pytest.mark.slow
 @pytest.mark.parametrize('arg', range(30))
 def test_5(arg):
-    time.sleep(1)
-    assert random.randint(0, 10) > rand_sep
+    time.sleep(random.random())
+    assert random.randint(0, 10) < rand_sep
