@@ -1,6 +1,7 @@
 from setuptools import setup
 
 readme = open('README.rst').read()
+changes = open('CHANGES.rst').read()
 
 
 def parse_requirements():
@@ -11,6 +12,7 @@ def parse_requirements():
 setup(name='flotsam',
       version='0.1.0',
       description='Sample project for purkinje test runner',
+      long_description=readme + '\n\n' + changes,
       author='Bernhard Biskup',
       author_email='bbiskup@gmx.de',
       url='biskup-software.de',
