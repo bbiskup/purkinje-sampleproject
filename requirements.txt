@@ -1,3 +1,3 @@
--e git+https://github.com/bbiskup/purkinje-messages.git@dev#egg=purkinje-messages-dev
--e git+https://github.com/bbiskup/purkinje-pytest.git@dev#egg=purkinje-pytest-dev
--e git+https://github.com/bbiskup/flotsam.git@dev#egg=flotsam-dev
+flotsam
+purkinje-messages
+pytest_purkinje
