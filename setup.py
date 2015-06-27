@@ -10,7 +10,7 @@ def parse_requirements():
 
 
 setup(name='purkinje-sampleproject',
-      version='0.1.1',
+      version='0.1.2',
       description='Sample project for purkinje test runner',
       long_description=readme + '\n\n' + changes,
       author='Bernhard Biskup',
