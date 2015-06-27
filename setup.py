@@ -9,8 +9,8 @@ def parse_requirements():
         return [x for x in req.readlines() if not x.startswith('-e ')]
 
 
-setup(name='flotsam',
-      version='0.1.0',
+setup(name='purkinje-sampleproject',
+      version='0.1.2',
       description='Sample project for purkinje test runner',
       long_description=readme + '\n\n' + changes,
       author='Bernhard Biskup',
@@ -31,6 +31,6 @@ setup(name='flotsam',
           'Programming Language :: Python :: 3.4',
       },
       license='The MIT License (MIT)',
-      keywords='flotsam utilities',
+      keywords='purkinje pytest',
       tests_require=['tox'],
       )
