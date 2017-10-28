@@ -1,4 +1,4 @@
-pytest==2.6.4
+pytest==3.1.0
 flotsam
-purkinje-messages
-pytest_purkinje
+purkinje-messages>=0.1.4
+pytest-purkinje>=0.1.6
