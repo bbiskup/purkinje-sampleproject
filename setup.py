@@ -4,9 +4,19 @@ readme = open('README.rst').read()
 changes = open('CHANGES.rst').read()
 
 
+
 def parse_requirements():
     with open('requirements.txt') as req:
-        return [x for x in req.readlines() if not x.startswith('-e ')]
+        return [x.strip() for x in req.readlines()
+                if not x.startswith('-e') and
+                not x.startswith('git+') and
+                not x.startswith('https://')]
+
+
+def parse_dependency_links():
+    with open('requirements.txt') as req:
+        return [x.strip() for x in req.readlines()
+                if x.startswith('https://')]
 
 
 setup(name='purkinje-sampleproject',
@@ -28,7 +38,7 @@ setup(name='purkinje-sampleproject',
           # Topic :: Software Development :: Libraries :: Python Modules',
           'License :: OSI Approved :: MIT License',
           'Programming Language :: Python :: 2.7',
-          'Programming Language :: Python :: 3.4',
+          'Programming Language :: Python :: 3.5',
       },
       license='The MIT License (MIT)',
       keywords='purkinje pytest',
